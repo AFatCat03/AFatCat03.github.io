@@ -1,6 +1,6 @@
 baseURL = 'https://AFatCat03.github.io/'
 languageCode = 'zh-cn'
-title = 'Axiolux'
+title = 'AFatCat03'
 theme = 'FixIt' 
 
 [params]
@@ -16,7 +16,7 @@ theme = 'FixIt'
 
     [params.home.profile]
         enable = true
-        title = "Axiolux"
+        title = "AFatCat03"
         subtitle = "C++ / Go / 概率论 / 读书笔记"
 
 [menu]
