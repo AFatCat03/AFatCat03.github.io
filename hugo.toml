@@ -1,0 +1,66 @@
+baseURL = 'https://AFatCat03.github.io/'
+languageCode = 'zh-cn'
+title = 'Axiolux'
+theme = 'FixIt' 
+
+[params]
+  # --- 核心功能开关 ---
+    [params.math]
+        enable = true # 全局开启数学公式
+        type = "katex" # 使用速度更快的 katex
+
+    [params.code]
+        copy = true
+        header = true
+        maxShownLines = 50
+
+    [params.home.profile]
+        enable = true
+        title = "Axiolux"
+        subtitle = "C++ / Go / 概率论 / 读书笔记"
+
+[menu]
+    # 1. 分布式系统
+    [[menu.main]]
+    identifier = "dist-sys"   # 内部ID
+    name = "分布式系统"        # 菜单显示的名字
+    url = "/dist-sys/"        # 对应的目录
+    weight = 1                # 排在最左边
+
+    # 2. 概率论
+    [[menu.main]]
+    identifier = "probability"
+    name = "概率论"
+    url = "/probability/"
+    weight = 2
+
+    # 3. 归档 (可选，FixIt主题自带，方便按时间看所有文章)
+    [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 3
+
+    [[menu.main]]
+    parent = "dist-sys"
+    name = "Week1"
+    url = "/dist-sys/week1/"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    # 重点：必须设为 false，让 FixIt 主题的 CSS 接管样式
+    noClasses = false 
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true 
+
+    [markup.goldmark.extensions.passthrough]
+      enable = true
+      [markup.goldmark.extensions.passthrough.delimiters]
+        block = [['\[', '\]'], ['$$', '$$']]
+        inline = [['\(', '\)'], ['$', '$']]
