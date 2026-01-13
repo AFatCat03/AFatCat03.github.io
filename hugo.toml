@@ -19,6 +19,11 @@ theme = 'FixIt'
         title = "AFatCat03"
         subtitle = "C++ / Go / 概率论 / 读书笔记"
 
+    [params.author]
+        name = "AFatCat03"
+        email = "AFatCat03@gmail.com" # 可选，侧栏头像下会生成邮箱图标
+        link = "/" # 点击名字跳转的链接，通常设为首页或 About 页
+
 [menu]
     # 1. 分布式系统
     [[menu.main]]
