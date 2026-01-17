@@ -1,6 +1,6 @@
 +++
 date = '2026-01-13T17:15:20+08:00'
-draft = true
+draft = false
 title = 'Week1 Day2'
 +++
 ## Day 2: Go 语法速览与工程初探
