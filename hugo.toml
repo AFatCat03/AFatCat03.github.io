@@ -32,19 +32,26 @@ theme = 'FixIt'
     url = "/dist-sys/"        # 对应的目录
     weight = 1                # 排在最左边
 
-    # 2. 概率论
+    # 2. 杂谈
+    [[menu.main]]
+    identifier = "misc"
+    name = "杂谈"
+    url = "/misc/"
+    weight = 2
+
+    # 3. 概率论
     [[menu.main]]
     identifier = "probability"
     name = "概率论"
     url = "/probability/"
-    weight = 2
+    weight = 3
 
-    # 3. 归档 (可选，FixIt主题自带，方便按时间看所有文章)
+    # 4. 归档 (可选，FixIt主题自带，方便按时间看所有文章)
     [[menu.main]]
     identifier = "archives"
     name = "归档"
     url = "/archives/"
-    weight = 3
+    weight = 4
 
     [[menu.main]]
     parent = "dist-sys"
