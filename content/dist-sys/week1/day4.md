@@ -1,7 +1,7 @@
 +++
 date = '2026-01-19T13:08:22+08:00'
 draft = false
-title = 'Day4'
+title = 'Week1 Day4'
 +++
 ## Day 4: 跨越内核屏障（文件与资源管理）
 

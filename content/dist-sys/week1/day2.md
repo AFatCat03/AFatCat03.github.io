@@ -180,6 +180,7 @@ title = 'Week1 Day2'
         - You can declare a method on non-struct types, too. But you can only declare a method with a receiver whose type is defined in the same package as the method. You cannot declare a method with a receiver whose type is defined in another package (which **includes the built-in types such as `int`**).
         - You can declare methods with pointer receivers. This means the receiver type has the literal syntax `*T` for some type `T`. (Also, `T` cannot itself be a pointer such as `*int`.)
         - Functions with a pointer argument must take a pointer, while methods with pointer receivers take either a value or a pointer as the receiver when they are called(That is, as a convenience, Go interprets the statement `v.Scale(5)` as `(&v).Scale(5)` since the `Scale` method has a pointer receiver.)
+            > v 是可寻址的（Addressable）, 才会自动寻址
         - Functions that take a value argument must take a value of that specific type, while methods with value receivers take either a value or a pointer as the receiver when they are called(In this case, the method call `p.Abs()` is interpreted as `(*p).Abs()`)
         - There are two reasons to use a pointer receiver.
             - The first is so that the method can modify the value that its receiver points to.
