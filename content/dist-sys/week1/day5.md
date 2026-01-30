@@ -3,7 +3,7 @@ date = '2026-01-24T15:51:13+08:00'
 draft = false
 title = 'Week1 Day5'
 +++
-## 接口多态与流式复用
+## Day 5: 接口多态与流式复用
 
 1. 接口多态性 (Interface Polymorphism)
     - 阅读 Language Specification 中关于 [Interface types](https://golang.google.cn/ref/spec#Interface_types) 的部分
