@@ -208,7 +208,7 @@ title = 'Week1 Day6'
     > Shell 不会在“当前目录”找命令(防止 特洛伊木马攻击), Bash Shell 会按照以下步骤工作
     >   1. 检查别名 (Alias)：有没有叫这个名字的别名？
     >   2. 检查内置命令 (Built-in)：这是不是 cd 或 echo 这种内置命令？
-    >   3. 查询 $PATH (核心关键)：Shell 会遍历环境变量 $PATH 中定义的一系列目录（比如 /bin, /usr/bin, /usr/local/bin）。
+    >   3. 查询 \$PATH (核心关键)：Shell 会遍历环境变量 \$PATH 中定义的一系列目录（比如 /bin, /usr/bin, /usr/local/bin）。
     >   4. 找不到报错：如果这些目录里都没有 go-cat.exe，它就直接报错 command not found
     `GOOS=windows GOARCH=amd64 go build -o go-cat.exe cat.go`
     ```console { title="不显示行号" }
