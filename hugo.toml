@@ -58,6 +58,11 @@ theme = 'FixIt'
     name = "Week1"
     url = "/dist-sys/week1/"
 
+    [[menu.main]]
+    parent = "dist-sys"
+    name = "Week2"
+    url = "/dist-sys/week2/"
+
 [markup]
   [markup.highlight]
     codeFences = true
