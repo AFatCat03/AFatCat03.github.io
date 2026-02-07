@@ -114,6 +114,7 @@ title = 'Week1 Day2'
             - `b := make([]int, 0, 5) // len(b)=0, cap(b)=5`
         - Slices can contain any type, including other slices.
         - Go provides a built-in append function to append new elements to a slice, `func append(s []T, vs ...T) []T`
+            > 相当于从len的位置开始**覆**写, 不关注底层数组该位置是否有数据
             - The first parameter `s` of append is a slice of type `T`, and the rest are `T` values to append to the slice.
             - The resulting value of `append` is a slice containing all the elements of the original slice plus the provided values.
             - If the backing array of `s` is too small to fit all the given values a bigger array will be allocated. The returned slice will point to the newly allocated array.
